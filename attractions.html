@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/projectckpoint.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <title>Macon County | Attractions</title>
+</head>
+<body>
+    <div id="container">
+
+        <!-- Use the header area for the website name or logo -->
+        <header classs="header">
+            <div id="logo">
+                <img class="logo_img" src="images/mock-macon-county-north-carolina.png" alt="macon-county-logo" >
+            </div>
+
+            <nav class="mynavbar">
+                <!-- Hamburger icon -->
+                <input class="side-menu" type="checkbox" id="side-menu" />
+                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+                <!-- Use the nav area to add hyperlinks to other pages within the website -->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="government.html">Government</a>
+                        <ul class="subnav-menu">
+                            <li><a href="county_commissioners.html">County Commissioners</a></li>
+                            <li><a href="meeting_minutes.html">Meeting Minutes</a></li>
+                            <li><a href="county_manager.html">County Manager</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="departments.html">Departments</a>
+                        <ul class="subnav-menu">
+                            <li><a href="health_department.html">Health Department</a></li>
+                            <li><a href="finance_department.html">Finance Department</a></li>
+                            <li><a href="planning_zoning.html">Planning & Zoning</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="residents.html">Residents</a>
+                        <ul class="subnav-menu">
+                            <li><a href="public_services.html">Public Services</a></li>
+                            <li><a href="forms_permits.html">Forms & Permits</a></li>
+                            <li><a href="fqa.html">FQA</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="visitors.html">Visitors</a>
+                        <ul class="subnav-menu">
+                            <li><a href="attractions.html">Attractions</a></li>
+                            <li><a href="lodging.html">Lodging</a></li>
+                            <li><a href="maps_directions.html">Maps & Directions</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="business.html">Business</a>
+                        <ul class="subnav-menu">
+                            <li><a href="permitting.html">Permitting</a></li>
+                            <li><a href="economic_development.html">Economic Development</a></li>
+                            <li><a href="chamber_commerce.html">Chamber of Commerce</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li>
+                        <form class="search_bar" action="search_function.php">
+                            <label for="searchText">Search Text</label>
+                            <input type="text" placeholder="Search ..." name="search" id="searchText">
+                            <button type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <h1>Attractions</h1>
+
+
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+            <h2>For Our Visitors</h2>
+
+            <div class="grid">
+                <div class="col-content">
+                    <fieldset>
+                        <legend><h3>Greenway</h3></legend>
+                        <img src="images/Little_Tennessee_River_Greenway.jpg" width="200" alt="codiaeum">
+                        <p>
+                            The Little Tennessee River Greenway is one of more than a thousand such trails snaking their way across America
+                            turning old canals, abandoned rail beds and forgotten riverbanks into green recreational corridors.
+                        </p>
+                        <a href="attractions.html">More Details</a>
+                    </fieldset>
+
+                </div>
+
+                <div class="col-content">
+                    <fieldset>
+                        <legend><h3>Forge Lake</h3></legend>
+                        <img src="images/forge_lake_lodge.jpg" width="200" alt="lantana">
+                        <p>
+                            The Forge Lake Lodge is an architectural marvel with a wine cellar, multiple stone fireplaces, and stunning
+                            bathrooms. This 10,000-square-foot palace sleeps 16, which is perfect for a family gathering or corporate retreat.
+                        <p>
+                        <a href="lodging.html">More Details</a>
+                    </fieldset>
+                </div>
+
+                <div class="col-content">
+                    <fieldset>
+                        <legend><h3>County Parks</h3></legend>
+                        <img src="images/county_parks.jpg" width="200" alt="pentas">
+                        <p>
+                            Macon County Parks & Recreation is made up of several locations to serve our citizens.
+                        </p>
+                        <a href="maps_directions.html">More Details</a>
+                    </fieldset>
+                </div>
+            </div>
+        </main>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+
+            <p>
+
+                Address: 123 Main St., Raleigh, NC 27000<br>
+                Phone: (919)-123-4567 <br>
+                Social media:
+                <a href="https://twitter.com/i/flow/login"> <img src="images/logo.svg" alt="X"></a> |
+                <a href="https://www.facebook.com/indexhtml"> <img src="images/Facebook-Brand-Asset-Pack/Facebook_Brand_Asset_Pack/Logo/Primary_Logo/Facebook_Logo_Primary.png" alt="Facebook"> </a> <br>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

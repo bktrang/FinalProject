@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/projectckpoint.css">
+    <title>Macon County | Contact</title>
+</head>
+<body>
+    <div id="container">
+
+        <!-- Use the header area for the website name or logo -->
+        <header classs="header">
+            <div id="logo">
+                <img class="logo_img" src="images/mock-macon-county-north-carolina.png" alt="macon-county-logo" >
+            </div>
+
+            <nav class="mynavbar">
+                <!-- Hamburger icon -->
+                <input class="side-menu" type="checkbox" id="side-menu" />
+                <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+                <!-- Use the nav area to add hyperlinks to other pages within the website -->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="government.html">Government</a>
+                        <ul class="subnav-menu">
+                            <li><a href="county_commissioners.html">County Commissioners</a></li>
+                            <li><a href="meeting_minutes.html">Meeting Minutes</a></li>
+                            <li><a href="county_manager.html">County Manager</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="departments.html">Departments</a>
+                        <ul class="subnav-menu">
+                            <li><a href="health_department.html">Health Department</a></li>
+                            <li><a href="finance_department.html">Finance Department</a></li>
+                            <li><a href="planning_zoning.html">Planning & Zoning</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="residents.html">Residents</a>
+                        <ul class="subnav-menu">
+                            <li><a href="public_services.html">Public Services</a></li>
+                            <li><a href="forms_permits.html">Forms & Permits</a></li>
+                            <li><a href="fqa.html">FQA</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="visitors.html">Visitors</a>
+                        <ul class="subnav-menu">
+                            <li><a href="attractions.html">Attractions</a></li>
+                            <li><a href="lodging.html">Lodging</a></li>
+                            <li><a href="maps_directions.html">Maps & Directions</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="business.html">Business</a>
+                        <ul class="subnav-menu">
+                            <li><a href="permitting.html">Permitting</a></li>
+                            <li><a href="economic_development.html">Economic Development</a></li>
+                            <li><a href="chamber_commerce.html">Chamber of Commerce</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li>
+                        <form class="search_bar" action="search_function.php">
+                            <label for="searchText">Search Text</label>
+                            <input type="text" placeholder="Search ..." name="search" id="searchText">
+                            <button type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <h1>Contact Us</h1>
+
+
+
+
+        <!-- Use the main area to add the main content of the webpage -->
+        <main>
+            <h2>Get in Touch</h2>
+            <p>
+                We highly value your opinion and would like to hear from you.
+                If you have questions, suggestions, or feedback, please don't hesitate to contact us.
+            </p>
+
+            <div class="grid">
+                <div class="col-content">
+                    <form id="contact" method="post" action="#">
+
+                        <fieldset>
+                            <legend>Resident/Visitor Inputs</legend>
+                            <div class="textboxes">
+                                <div class="col-textbox">
+                                    <label class="formName" for="userName">First and Last Name</label> <br>
+                                    <input type="text" name='name' id="userName">
+                                </div>
+
+                                <div class="col-textbox">
+                                    <label class="formEmail" for="userEmail">Email Address</label> <br>
+                                    <input type="text" name='email' id="userEmail">
+                                </div>
+
+                                <div class="col-textbox">
+                                    <label class="formPhone" for="userPhone">Phone Number</label> <br>
+                                    <input type="text" name='phone' id="userPhone">
+                                </div>
+
+                            </div>
+
+                            <div class="checkboxes">
+                                <p>Contact Options</p>
+                                <input type="checkbox" name="email" value="email" id="email">
+                                <label for="email">E-mail</label>
+                                <br>
+                                <input type="checkbox" name="phone" value="phone" id="phone">
+                                <label for="phone">Phone</label>
+                                <br>
+                                <input type="checkbox" name="none" value="none" id="none">
+                                <label for="none">None</label>
+                                <br>
+
+                            </div>
+
+                            <div class="RadioButtons">
+                                <p>Have you been to Macon County, NC before?</p>
+                                <input type="radio" name="shoppedBefore" value="yes" id="yes">
+                                <label for="yes">Yes</label> <br>
+                                <input type="radio" name="shoppedBefore" value="no" id="no">
+                                <label for="no">No</label>
+                            </div>
+
+
+                            <hr>
+
+                            <div class="DropDown">
+                                <label for="reasonType">Reason:</label><br>
+                                <select class="select" name="reasonType" id="reasonType">
+                                    <option disabled selected>--Please choose an option--</option>
+                                    <option value="question">Question</option>
+                                    <option value="concern">Concern</option>
+                                    <option value="inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+
+
+                            <div class="textboxes">
+                                <label class="reasonText" for="reasonText">What can we help you with?</label>
+                                <br>
+                                <textarea id="reasonText" class="reasonText" name="reasonText"></textarea>
+                            </div>
+
+                            <input class="formSubmit" type="submit" id="formSubmit" value="Submit">
+
+
+
+                        </fieldset>
+
+                    </form>
+                </div>
+
+                <div class="col-content">
+                    <p>Let us know your desires, and we will give...</p>
+                    <img src="images/waterfall.jpg" alt="waterfall">
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+
+            <p>
+
+                Address: 123 Main St., Raleigh, NC 27000<br>
+                Phone: (919)-123-4567 <br>
+                Social media:
+                <a href="https://twitter.com/i/flow/login"> <img src="images/logo.svg" alt="X"></a> |
+                <a href="https://www.facebook.com/indexhtml"> <img src="images/Facebook-Brand-Asset-Pack/Facebook_Brand_Asset_Pack/Logo/Primary_Logo/Facebook_Logo_Primary.png" alt="Facebook"> </a> <br>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

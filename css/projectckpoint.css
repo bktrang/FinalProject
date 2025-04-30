@@ -1,0 +1,486 @@
+/*
+    Student Name: Bryan Trang
+	File Name: projectckpoint
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul, form,
+ .logo, .container, .team, .team-member, .col-content, .col-textbox, .mynavbar, .subnav-menu, input, .side-menu, .hamb, .hamb-line {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body, images, and logo */
+body {
+    width: 96%;
+    margin: 0 auto;
+    background: linear-gradient(rgb(219, 226, 219), #0cac21);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    padding: 0px;
+    border: 5px solid rgb(38, 235, 20);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    max-width: 100%;
+    display: inline-flex;
+    padding: 0px;
+}
+
+#logo img {
+    max-width: 100%;
+    display: inline-block;
+    padding: 0px;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* Style rule for the header */
+header {
+    /* style rule is for the header element when displayed in a mobile viewport. */
+    width: 100%;
+    float: none;
+    padding: 0%;
+    color: #3e23b5;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) ), url(../images/county_fair.jpg);
+}
+
+
+/* style rule is for the h1 element when displayed in a mobile viewport. */
+
+h1 {
+	color: #3e23b5;
+	text-align: center;
+    background-color: rgb(232, 202, 180);
+    padding: 5px;
+}
+
+/* Style rules for navigation abd sub navigation menu */
+nav {
+    overflow: hidden;
+    background-color: rgb(0, 217, 255);
+    display: block;
+    float: left;
+    width: 100%; /*73px*/
+  }
+  
+nav li , nav a {
+    font-size: 1em;
+    color: black;
+    text-align: left;
+    padding: 0px;
+    margin: 2px;
+    text-decoration: none;
+    display: block;
+}
+
+/*for Search box*/
+nav input[type=text] {
+    /*float: right;*/
+    color: black;
+    padding: 0px;
+    margin: 2px;
+    font-size: 1em;
+    display: inline-block;
+    background-color: white;
+    width: fit-content;
+}
+
+nav label {
+    color: blue;
+    padding: 0px;
+    margin: 2px;
+    font: italic 1em Georgia, serif;
+    font-size: 1em;
+    display: inline-block;
+    width: fit-content;
+}
+
+
+/* Style rules for search input */
+nav .search_bar{
+    color: blue;
+    background-color: white;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 2px;
+    font: italic 1em Georgia, serif;
+    font-size: 1em;
+    display: inline-block;
+    width: fit-content;
+}
+nav .search_bar button {
+    color: black;
+    display: inline-block;
+    width: fit-content;
+    padding: 0px 0px;
+    margin-right: 2px;
+    background: rgb(18, 214, 191);
+    font-size: 1em;
+    border: 1px;
+    cursor: pointer;
+}
+
+nav .search_bar label {
+    color: black;
+    display: inline-block;
+    width: fit-content;
+    padding: 0px 0px;
+    margin-right: 0px;
+    background: rgb(18, 214, 191);
+    font-size: 0;
+    visibility: hidden;
+
+}
+nav a:hover, .subnav-menu a:hover {
+    background-color: rgb(79, 128, 0);
+}
+
+/* Style rule subnavigate menu */
+.subnav-menu {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    width: fit-content;
+    z-index: 1;
+    padding: 0px 16px;
+}
+
+
+nav li:hover .subnav-menu {
+    display: block;
+}
+  
+.subnav-menu li {
+    font-size: 1em;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0px 0px;
+    margin: 0;
+    display: block;
+}
+  
+
+.subnav-menu a {
+    float: left;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+  
+.subnav-menu a:hover {
+    background-color: rgb(79, 128, 0);
+}
+
+
+/* Style rules for the main content  */
+main {
+	display: block;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	font-size: 1em;
+	padding: 1em;
+	background-color: #FFFFFF;
+	border-top: solid 0.2em #110934; 
+	border-bottom: solid 0.2em #110934;
+}
+
+/* Style rule for grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+/* Style rule for grid columns */
+.col-content {
+    width: auto;/*90%;*/
+    /*min-width: 260px;*/
+    float: none;
+    padding: 0%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1% ;
+    border: 10px solid rgb(190, 117, 0);
+    display: block;
+    background-color: aquamarine;
+}
+
+.col-content img {
+    max-width: 90%;
+    display: block;
+    padding: 0px;
+    border: 5px solid rgb(38, 235, 20);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style rules for contact form */
+#contact {
+    width: 100%;
+    float: none;
+    padding: 0%;
+    margin:  0px;
+    display: block;
+}
+
+.textboxes {
+    width: 100%;
+    float: none;
+    padding: 0%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+
+
+.col-textbox {
+    width: 100%;
+    float: none;
+    padding: 0%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.checkbox {
+    width: 100%;
+    float: none;
+    padding: 0%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.RadioButtons {
+    width: 100%;
+    float: none;
+    padding: 0%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+hr {
+    border: 2px solid green;
+    border-radius: 5px;
+    width: 100%;
+    float: none;
+    padding: 0%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown:hover {
+    display: block;
+}
+
+.formSubmit {
+    color: blue;
+}
+img {
+    display: block;
+}
+
+/* Style rule for h1, h2, h3 */
+h1 {
+    text-align: center;
+    color: rgb(158, 108, 0);
+    font-family: cursive;
+}
+
+h2{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Style rule for footer */
+footer {
+	font-size: 1.0em;
+	text-align: center;
+	margin-top: 2em;
+    color: black;
+    background-color: orange;
+}
+
+footer img {
+    width: 1.0em;
+    display: inline-block;
+    padding: 0px;
+    border: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    overflow: hidden;
+    display: none
+}
+
+/* Toggle menu icon */
+.side-menu:checked ~ .menu {
+    display: block;
+}
+
+
+.side-menu:checked ~ nav {
+    overflow: hidden;
+    background-color: rgb(0, 217, 255);
+    display: inline-block;
+    float: right;
+    width: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+/* Menu Icon */
+.hamb {
+    cursor: pointer;
+    float: left;
+    padding: 10px 10px;
+}
+/* Style label tag */
+
+.hamb-line {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+    /* Style span tag */
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: black;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+.side-menu {
+    display: none;
+}
+.hamb {
+    display: block;
+}
+/* Hide checkbox */
+
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 481px), print {
+    /* Style rule for inline navigation menu */
+    nav {
+        overflow: hidden;
+        background-color: rgb(0, 217, 255);
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .menu {
+        overflow: hidden;
+        display: block
+    }
+
+    .mynavbar {
+        overflow: hidden;
+        display: inline-block
+    }
+    .hamb {
+        display: none;
+    }
+    nav li , nav a {
+        display: inline-block;
+    }
+    
+    /*for Search box*/
+    nav input[type=text] {
+        display: inline-block;
+    }
+    
+    /* Style rule for grid column */
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2%;
+    }
+}
+
+
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+    /* Desktop Viewport: Style rules for the content */
+    .mynavbar {
+        overflow: hidden;
+        display: inline-block
+    }
+    /* Style rule for inline navigation menu */
+    nav li, nav a {
+        display: inline-block;
+    }
+    
+    /*for Search box*/
+    nav input[type=text] {
+        display: inline-block;
+        /*background-color: rgb(17, 206, 219);*/
+    }
+
+        /* Style rule for grid column */
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+
+}
